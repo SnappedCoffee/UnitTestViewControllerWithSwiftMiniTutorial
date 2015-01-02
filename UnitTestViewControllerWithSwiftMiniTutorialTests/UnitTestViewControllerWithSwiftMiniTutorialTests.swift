@@ -9,6 +9,9 @@
 import UIKit
 import XCTest
 
+//  Important: Import the project module
+import UnitTestViewControllerMiniTutorial
+
 class UnitTestViewControllerWithSwiftMiniTutorialTests: XCTestCase {
     
     override func setUp() {
