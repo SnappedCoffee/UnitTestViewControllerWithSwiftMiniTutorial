@@ -10,7 +10,7 @@ import UIKit
 import XCTest
 
 //  Important: Import the project module
-import UnitTestViewControllerMiniTutorial
+import UnitTestViewControllerWithSwiftMiniTutorial
 
 class UnitTestViewControllerWithSwiftMiniTutorialTests: XCTestCase {
     

@@ -15,8 +15,35 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="empty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqP-7Z-NLg">
+                                <rect key="frame" x="279" y="102" width="48" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jS4-ua-JoF">
+                                <rect key="frame" x="240" y="193" width="121" height="30"/>
+                                <state key="normal" title="Change the Label">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8U-Bt-err"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jS4-ua-JoF" secondAttribute="centerX" constant="-0.5" id="0iG-p3-n6d"/>
+                            <constraint firstItem="SqP-7Z-NLg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="82" id="FYG-dR-3gS"/>
+                            <constraint firstItem="jS4-ua-JoF" firstAttribute="top" secondItem="SqP-7Z-NLg" secondAttribute="bottom" constant="70.5" id="TCC-Ty-TyX"/>
+                            <constraint firstAttribute="centerX" secondItem="SqP-7Z-NLg" secondAttribute="centerX" constant="-3" id="WSX-zm-DUH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myButton" destination="jS4-ua-JoF" id="9iV-iO-vo0"/>
+                        <outlet property="myLabel" destination="SqP-7Z-NLg" id="Frd-uz-tRF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
